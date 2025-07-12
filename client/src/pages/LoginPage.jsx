@@ -66,7 +66,7 @@ const LoginPage = () => {
           )
         }
 
-        <button type="submit" className='py-3 bg-gradient-to-r from-purple-400 to-violet-600 text-white rounded-md cursor-pointer'>
+        <button type="submit" className='py-3 bg-gradient-to-r from-blue-700 to-blue-400 text-white rounded-md cursor-pointer'>
           {currState === "Sign up" ? "Create account" : "Login Now"}
         </button>
 
@@ -90,12 +90,12 @@ const LoginPage = () => {
             currState === "Sign up" ?
               (
                 <p className='text-sm text-gray-600'>Already have an account?
-                  <span onClick={() => { setCurrState("Login"); setIsDataSubmitted(false) }} className='font-medium text-violet-500 cursor-pointer'> Login here</span>
+                  <span onClick={() => { setCurrState("Login"); setIsDataSubmitted(false) }} className='font-medium text-blue-500 cursor-pointer'> Login here</span>
                 </p>
               )
               : (
                 <p className='text-sm text-gray-600'>Create an account
-                  <span onClick={() => { setCurrState("Sign up") }} className='font-medium text-violet-500 cursor-pointer'> Click here</span>
+                  <span onClick={() => { setCurrState("Sign up") }} className='font-medium text-blue-500 cursor-pointer'> Click here</span>
                 </p>
               )
           }

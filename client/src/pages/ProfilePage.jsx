@@ -51,11 +51,11 @@ const ProfilePage = () => {
           </label>
           
           <input onChange={(e)=>{setName(e.target.value)}} value={name}
-          type="text" required placeholder='Your name' className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500'/>
+          type="text" required placeholder='Your name' className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'/>
 
-          <textarea onChange={(e)=>{setBio(e.target.value)}} value={bio} placeholder='Write profile bio' required className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500'></textarea>
+          <textarea onChange={(e)=>{setBio(e.target.value)}} value={bio} placeholder='Write profile bio' required className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'></textarea>
 
-          <button type='submit' className='py-3 bg-gradient-to-r from-purple-400 to-violet-600 text-white rounded-full cursor-pointer'>Save</button>
+          <button type='submit' className='py-3 bg-gradient-to-r from-blue-700 to-blue-40 text-white rounded-full cursor-pointer'>Save</button>
         </form>
 
         <img src={authUser.profilePic ? authUser.profilePic : assets.logo_icon}  className={`max-w-44 aspect-square rounded-full mx-10 max-sm:mt-10 ${selectedImage && 'rounded-full'}`}  alt="" />
